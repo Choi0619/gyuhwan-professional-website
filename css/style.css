@@ -1,0 +1,354 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.5;
+  font-family: 'NanumGothic', sans-serif;
+  color: #666;
+  padding: 0;
+  width: 980px;
+  margin: 0 auto;
+  position: relative;
+  background-image: url("../image/background.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  padding: 40px 0;
+  background-color: #333;
+  color: #fff;
+}
+
+.main-title {
+  font-family: 'Monoton', cursive;
+  font-size: 4rem;
+  color: #fff;
+  text-shadow: 2px 2px #aaa;
+  margin-bottom: 10px;
+}
+
+.intro-text {
+  font-size: 1.3rem;
+  color: #ddd;
+  line-height: 1.8;
+  margin-top: 10px;
+}
+
+h2 {
+  font-family: 'Georgia', serif;
+  font-size: 2.2rem;
+  color: #444;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 10px;
+}
+
+h3 {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 1.8rem;
+  color: #5a1d99;
+  margin-bottom: 15px;
+}
+
+/* Paragraph Styling */
+p {
+  font-size: 1.1rem;
+  padding: 10px 0px 15px 0px;
+  line-height: 1.8;
+}
+
+.about-me, .work-experience, .skills, .web-experience, .contact-info, .find-me-online {
+  margin: 50px 0;
+}
+
+/* About Me Section */
+.about-me {
+  background-color: rgba(250, 250, 250, 0.9);
+  border-left: 6px solid #333;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.about-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-text {
+  flex-grow: 1;
+  margin-left: 20px;
+}
+
+.profile-image img {
+  max-width: 200px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Web Development Experience Section */
+.web-experience-card {
+  background-color: rgba(230, 230, 250, 0.9);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: rgba(50, 50, 90, 0.25) 0 50px 100px -20px, rgba(0, 0, 0, 0.3) 0 30px 60px -20px;
+  transition: all 0.25s ease;
+}
+
+.web-experience-card:hover {
+  transform: translateY(-5px);
+}
+
+.web-experience-card h3 {
+  font-size: 1.6rem;
+  color: #5a1d99;
+}
+
+.web-experience-card p {
+  font-size: 1.1rem;
+  color: #444;
+}
+
+/* Work Experience Cards */
+.experience-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.experience-card {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.25s ease;
+}
+
+.experience-card:hover {
+  transform: translateY(-5px);
+}
+
+.experience-card h3 {
+  font-size: 1.4rem;
+  color: #2c3e50;
+}
+
+.experience-card p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* Skills Section */
+.skills {
+  background-color: rgba(245, 245, 245, 0.95);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.skill-list {
+  list-style-type: none;
+  padding-left: 0;
+  font-size: 1.1em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: space-between;
+}
+
+.skill-list li {
+  background-color: rgba(250,250,250,0.2);
+  padding: 10px 20px;
+  margin: 10px 0;
+  border-left: 5px solid #6441a5;
+  transition: background-color 0.3s;
+  border-radius: 5px;
+  width: calc(50% - 15px);
+}
+
+
+.skill-list li:hover {
+  background-color: rgba(250,250,250,0.5);
+}
+
+.skill-list li strong {
+  font-weight: bold;
+}
+
+/* Contact Info Section */
+.contact-info {
+  background-color: rgba(240, 248, 255, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.contact-info-card {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+}
+
+.contact-item img {
+  width: 40px;
+  margin-right: 15px;
+}
+
+.contact-text strong {
+  font-size: 1.2em;
+  color: #5a1d99;
+}
+
+.contact-text p {
+  margin: 5px 0;
+  font-size: 1.1em;
+  color: #333;
+}
+
+/* Find Me Online */
+.find-me-online {
+  text-align: center;
+}
+
+.find-me-online a {
+  font-size: 1.2rem;
+  color: #3498db;
+  text-decoration: underline;
+}
+
+.find-me-online a:hover {
+  color: #2c3e50;
+}
+
+/* Media Query */
+@media (max-width: 768px) {
+  .main-title {
+    font-size: 2.5rem;
+  }
+
+  .intro-text {
+    font-size: 1.1rem;
+    margin-top: 5px;
+  }
+
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-image img {
+    max-width: 150px;
+    margin-bottom: 15px;
+  }
+
+  .experience-cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-info-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contact-item {
+    margin-bottom: 15px;
+  }
+
+  .skill-list {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .skill-list li {
+    width: 100%;
+  }
+
+  .about-me, .work-experience, .skills, .web-experience, .contact-info, .find-me-online {
+    margin: 30px 0;
+  }
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  .profile-image img {
+    max-width: 120px;
+  }
+
+  .experience-cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .experience-card {
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+
+  .contact-info-card {
+    padding: 15px;
+  }
+
+  .contact-item img {
+    width: 30px;
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+  }
+
+  p {
+    font-size: 0.85rem;
+  }
+
+  .profile-image img {
+    max-width: 100px;
+  }
+
+  .skill-list li {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .contact-info-card {
+    padding: 10px;
+  }
+
+  .contact-item img {
+    width: 25px;
+  }
+}
