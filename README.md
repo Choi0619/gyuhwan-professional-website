@@ -20,4 +20,4 @@ The website includes:
 This website was built as part of the **ITMD-541** course at **Illinois Institute of Technology**, showcasing web development skills and professional background.
 
 ## 🚀 Live Demo
-[Visit the live site here](https://your-github-username.github.io/gyuhwan-professional-website/)
+[Visit the live site here](https://choi0619.github.io/gyuhwan-professional-website/)
